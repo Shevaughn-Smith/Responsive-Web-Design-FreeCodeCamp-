@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>Python Features Documentation</header>
+            <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+            <a class="nav-link" href="#Dynamic_Typing">Dynamic Typing</a>
+            <a class="nav-link" href="#Rich_Standard_Library">Rich Standard Library</a>
+            <a class="nav-link" href="#Powerful_List_Comprehensions">Powerful List Comprehensions</a>
+            <a class="nav-link" href="#Object_Oriented_Programming_(OOP)">Object Oriented Programming (OOP)</a>
+            <a class="nav-link" href="#Module_System">Module System</a>
+            <a class="nav-link" href="#Exception_Handling">Exception Handling</a>
+            <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </nav>
+        <section id="Introduction_to_Python" class="main-section">
+            <header>Introduction to Python</header>
+            <h2>Overview</h2>
+            <p>
+                Python is a versatile and powerful programming language known for its simplicity and readability. In this chapter, we'll introduce the fundamental features that make Python an excellent choice for developers. Python, created by Guido van Rossum, is an interpreted, high-level, and general-purpose programming language. It emphasizes code readability and ease of use, making it an excellent choice for beginners and experienced developers alike.
+            </p>
+            <p>
+                Python's syntax is clean and easy to understand, using indentation to define code blocks. This eliminates the need for braces or semicolons, making Python code visually appealing and reducing the likelihood of syntax errors.
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Example 1.1: Hello World</h4>
+            <pre>
+                <code>
+                    print("Hello, World!")
+                </code>
+            </pre>
+            <h4>Example 1.2: Variable Assignment</h4>
+            <pre>
+                <code>
+                    message = "Welcome to Python"
+                    print(message)
+                </code>
+            </pre>
+            <h4>Example 1.3: Data Types</h4>
+            <pre>
+                <code>
+                    num = 42
+                    float_num = 3.14
+                    string = "Python"
+                    boolean = True
+
+                    print(num, float_num, string, boolean)
+                </code>
+            </pre>
+        </section>
+        <section id="Dynamic_Typing" class="main-section">
+            <header>Dynamic Typing</header>
+            <h2>Overview</h2>
+            <p>
+                Python is dynamically typed, meaning you don't need to declare variable types explicitly. In this chapter, we explore how dynamic typing simplifies code and enhances flexibility.
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Example 2.1: Dynamic Typing</h4>
+            <pre>
+                <code>
+                    dynamic_var = 42
+                    print(dynamic_var)
+
+                    dynamic_var = "Python"
+                    print(dynamic_var)
+                </code>
+            </pre>
+            <h4>Example 2.2: Type Inference</h4>
+            <pre>
+                <code>
+                    x = 5
+                    y = 3.14
+                    result = x + y
+                    print(result)
+                </code>
+            </pre>
+        </section>
+        <section id="Rich_Standard_Library" class="main-section">
+            <header>Rich Standard Library</header>
+            <h2>Overview</h2>
+            <p>
+                One of Python's strengths is its extensive standard library. In this chapter, we'll delve into key modules and demonstrate their usage.
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Working with Datetime</h4>
+            <pre>
+                <code>
+                    from datetime import datetime
+
+                    now = datetime.now()
+                    print("Current date and time:", now)
+                </code>
+            </pre>
+            <h4>File Handling</h4>
+            <pre>
+                <code>
+                    with open("example.txt", "w") as file:
+                        file.write("Hello, Python!")
+
+                    with open("example.txt", "r") as file:
+                        content = file.read()
+                        print(content)
+                </code>
+            </pre>
+        </section>
+        <section id="Powerful_List_Comprehensions" class="main-section">
+            <header>Powerful List Comprehensions</header>
+            <h2>Overview</h2>
+            <p>
+                List comprehensions provide a concise and expressive way to create lists in Python. In this chapter, we explore the elegance of list comprehensions.
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Basic List Comprehension</h4>
+            <pre>
+                <code>
+                    squares = [x**2 for x in range(5)]
+                    print(squares)
+                </code>
+            </pre>
+            <h4>Conditional List Comprehension</h4>
+            <pre>
+                <code>
+                    even_squares = [x**2 for x in range(10) if x % 2 == 0]
+                    print(even_squares)
+                </code>
+            </pre>
+        </section>
+        <section id="Object_Oriented_Programming_(OOP)" class="main-section">
+            <header>Object Oriented Programming (OOP)</header>
+            <h2>Overview</h2>
+            <p>
+                Python supports object-oriented programming principles, allowing for modular and reusable code. This chapter introduces OOP concepts in Python
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Class and Object</h4>
+            <pre>
+                <code>
+                    class Dog:
+                        def __init__(self, name):
+                            self.name = name
+
+                        def bark(self):
+                            print(f"{self.name} says Woof!")
+
+                    dog1 = Dog("Buddy")
+                    dog1.bark()
+                </code>
+            </pre>
+            <h4>Inheritance</h4>
+            <pre>
+                <code>
+                    class Cat(Dog):
+                        def purr(self):
+                            print(f"{self.name} says Purr!")
+
+                    cat1 = Cat("Whiskers")
+                    cat1.bark()  # Inherits from Dog class
+                    cat1.purr()
+                </code>
+            </pre>
+        </section>
+        <section id="Module_System" class="main-section">
+            <header>Module System</header>
+            <h2>Overview</h2>
+            <p>
+                Python's module system facilitates code organization and reuse. In this chapter, we explore the creation and usage of modules.
+            </p>
+            <p>Here are five popular modules:</p>
+            <ul>
+                <li>Django</li>
+                <li>Requests</li>
+                <li>Matplotlib</li>
+                <li>Pandas</li>
+                <li>Numpy</li>
+            </ul>
+            <h2>Code Examples</h2>
+            <h4>Creating a Module</h4>
+            <pre>
+                <code>
+                    # Module: math_operations.py
+                    def add(x, y):
+                        return x + y
+
+                    def subtract(x, y):
+                        return x - y
+                </code>
+            </pre>
+            <h4>Importing and Using a Module</h4>
+            <pre>
+                <code>
+                    # Main program
+                    from math_operations import add, subtract
+
+                    result_add = add(5, 3)
+                    result_subtract = subtract(10, 4)
+
+                    print("Addition:", result_add)
+                    print("Subtraction:", result_subtract)
+                </code>
+            </pre>
+        </section>
+        <section id="Exception_Handling" class="main-section">
+            <header>Exception Handling</header>
+            <h2>Overview</h2>
+            <p>
+                Exception handling in Python ensures robust code that gracefully deals with errors. This chapter explores how Python manages exceptions.
+            </p>
+            <h2>Code Examples</h2>
+            <h4>Basic Exception Handling</h4>
+            <pre>
+                <code>
+                    try:
+                        result = 10 / 0
+                    except ZeroDivisionError as e:
+                        print(f"Error: {e}")
+                </code>
+            </pre>
+            <h4>Custom Exceptions</h4>
+            <pre>
+                <code>
+                    class CustomError(Exception):
+                        pass
+
+                    try:
+                        raise CustomError("This is a custom error.")
+                    except CustomError as e:
+                        print(f"Custom Error: {e}")
+                </code>
+            </pre>
+        </section>
+        <section id="Conclusion" class="main-section">
+            <header>Conclusion</header>
+            <p>
+                This technical documentation provides an in-depth exploration of seven key features of Python, accompanied by multiple code examples for each feature. Readers can gain a comprehensive understanding of Python's capabilities and how to leverage them in their programming endeavors.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
